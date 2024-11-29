@@ -28,7 +28,7 @@ def check_apps_uptime(csv_file, result_file):
                     url = row[0]
                     status = check_uptime(url)
 
-                    # Print the status to the console in simple language
+                    # Print the status to the console 
                     if "UP" in status:
                         print(f"Site {url} is UP (Available).")
                     else:
@@ -40,6 +40,6 @@ def check_apps_uptime(csv_file, result_file):
 # Example usage
 if __name__ == "__main__":
     # Path to your input CSV file (make sure it contains the URLs)
-    csv_file = 'application_health_check.csv'  # Modify this path as necessary
+    csv_file = 'application_health_check.csv'  # input file path
     result_file = 'application_health_result.csv'  # Path to save the results
     check_apps_uptime(csv_file, result_file)
